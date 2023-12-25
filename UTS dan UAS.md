@@ -14,9 +14,9 @@ Pengguna | Menggerakan roket | Roket bisa bergerak naik | ⭐⭐⭐⭐⭐
 Pengguna | Menhingdari hambatan meteor| roket bisa menghindari meteor untuk bisa finish |  ⭐⭐⭐⭐⭐
 Sistem | Membuat hambatan | Mempersulit roket supaya bisa menghindari 8 kali meteor yang jatuh| ⭐⭐⭐⭐⭐
 ## 1.5 Desain User Interface
-<img width="960" alt="Screenshot 2023-12-25 133750" src="https://github.com/SyifaNurmaulida/UTS-UAS-PDP/assets/145275738/6dbfcdf0-7b5a-415d-b5b4-6382a57c5981">
-Baru di terminal pak mohon maaf,desain ui/ux nya masih proses
-
+![WhatsApp Image 2023-12-25 at 19 44 59_af50f3f8](https://github.com/SyifaNurmaulida/UTS-UAS-PDP/assets/145275738/d2544ea2-b102-4ff1-b864-693200483eb3)
+![WhatsApp Image 2023-12-25 at 19 44 59_669cc81c](https://github.com/SyifaNurmaulida/UTS-UAS-PDP/assets/145275738/581e7833-0426-4fb7-b23d-60bfea2e6627)
+![WhatsApp Image 2023-12-25 at 19 44 59_e43173d7](https://github.com/SyifaNurmaulida/UTS-UAS-PDP/assets/145275738/085e5345-f863-454a-adc6-b5df646a5e1a)
 ## 1.6 Flowchart
 <img width="284" alt="Screenshot 2023-12-25 121035" src="https://github.com/SyifaNurmaulida/UTS-UAS-PDP/assets/145275738/faf4fe9e-385b-48e4-a01f-02433769fadb">
 
