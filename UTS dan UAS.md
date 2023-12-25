@@ -155,3 +155,4 @@ Dalam game Rocket Game ini  terdapat algoritma untuk mengatur jalannya permainan
 - Switch Statement (switch (pilihan) {...}): Menentukan aksi berdasarkan pilihan input pengguna. Dalam setiap kasus, terdapat logika untuk mengatasi kemungkinan bertemu meteor atau berhasil naik ke atas.
 - Random Probability (if (Math.random() < 0.4) {...}): Menggunakan nilai acak untuk mensimulasikan kemungkinan bertemu meteor. Jika nilai acak kurang dari 0.4, pemain mengalami kerusakan roket.
 - Display Method (private static void displayGame(int roketPosisi, int meteorsAvoided) {...}): Menampilkan kondisi permainan dengan representasi grafis roket dan meteor yang dihindari.
+- 
