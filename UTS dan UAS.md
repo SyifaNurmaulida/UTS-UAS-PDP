@@ -36,7 +36,6 @@ public class gameroket {
             this.posisi = 0;
         // inisialisasi posisi roket ke nilai awal(0)
         }   
-
         public void naik() { 
             //method,menaikkan posisi roket setiap dipanggil
             this.posisi++;
