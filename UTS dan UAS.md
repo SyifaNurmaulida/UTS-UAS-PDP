@@ -17,6 +17,7 @@ Sistem | Membuat hambatan | Mempersulit roket supaya bisa menghindari 8 kali met
 ![WhatsApp Image 2023-12-25 at 19 59 46_0076851a](https://github.com/SyifaNurmaulida/UTS-UAS-PDP/assets/145275738/710d6080-fbff-4a09-b6ab-b578a408e07b)
 ![WhatsApp Image 2023-12-25 at 19 59 46_ad7fa9e9](https://github.com/SyifaNurmaulida/UTS-UAS-PDP/assets/145275738/0027cd46-1b37-4d7a-b265-08be461e0c49)
 ![WhatsApp Image 2023-12-25 at 19 59 47_5bd0ac8d](https://github.com/SyifaNurmaulida/UTS-UAS-PDP/assets/145275738/6ef2cb7e-246a-49d5-879a-a371ceb3e379)
+<img width="960" alt="Screenshot 2023-12-25 133750" src="https://github.com/SyifaNurmaulida/UTS-UAS-PDP/assets/145275738/6ad040b6-497f-4bdb-8c83-45c5189ffec9">
 ## 1.6 Flowchart
 <img width="284" alt="Screenshot 2023-12-25 121035" src="https://github.com/SyifaNurmaulida/UTS-UAS-PDP/assets/145275738/faf4fe9e-385b-48e4-a01f-02433769fadb">
 
