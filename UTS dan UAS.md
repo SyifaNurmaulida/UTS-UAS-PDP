@@ -26,6 +26,7 @@ Sistem | Membuat hambatan | Mempersulit roket supaya bisa menghindari 8 kali met
 ## 1.8 Kode Pemograman Game
 import java.util.Scanner;
 // deklarasi penggunaan class scanner untuk mengambil input pengguna
+
 public class gameroket {
 // class utama
     static class Roket {
