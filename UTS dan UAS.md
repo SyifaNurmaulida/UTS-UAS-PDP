@@ -24,60 +24,89 @@ Sistem | Membuat hambatan | Mempersulit roket supaya bisa menghindari 8 kali met
 ## 1.7 Link Demo game
 
 ## 1.8 Kode Pemograman Game
-import java.util.Scanner;
-// deklarasi penggunaan class scanner untuk mengambil input pengguna
-
+    import java.util.Scanner;
+//deklarasi penggunaan class scanner untuk mengambil input pengguna
 public class gameroket {
-// class utama
+    //class utama
     static class Roket {
         private int posisi;
-        //variabel posisi:menyimpan posisi roket
+    //variabel posisi:menyimpan posisi roket
         public Roket() {
             this.posisi = 0;
-        // inisialisasi posisi roket ke nilai awal(0)
-        }   
-        
-        public void naik() { 
-            //method,menaikkan posisi roket setiap dipanggil
+        //inisialisasi posisi roket ke nilai awal(0)
+        }
+
+        public void naik() {
+        //method menaikkan posisi roket setiap dipanggil
             this.posisi++;
         }
 
         public int getPosisi() {
             return this.posisi;
-            //method mengembalikan nilai posisi roket
+        //method mengembalikan nilai posisi roket
         }
     }
 
-    public static void main(String[] args) { //method utama yang dijalankan saat program dimulai
-        int meteorDihindari = 0; //jumlah meteor yang berhasil dihindari
-        int meteorDiperlukan = 8; //jumlah meteor yang harus dihindari untuk mencapai finish
-        boolean gameOver = false; //status permainan (false selama game berlangsung,true saat game berakhir)
+   static class Meteor {
+    //class meteor yg dipecah dari class gameroket
+        private boolean isBertemu;
+    //atribut boolean bersifat privat yg menunjukkan apakah roket telah bertemu dengan meteor
+        public Meteor() {
+            this.isBertemu = false;
+        //inisialisasi dari (isBertemu) false ketika objek meteor dibuat
+        }
+
+        public boolean bertemuMeteor() {
+            return Math.random() < 0.4;
+        //method menentukan roket bertemu atau tidak dengan meteor menggunakan math.random untuk menghasilkan bilangan desimal acak 
+        }
+
+        public void setBertemu(boolean status) {
+            this.isBertemu = status;
+        //method yg memungkinkan untuk mengatur nilai roket akan bertemu dengan meteor atau tidak 
+        }
+
+        public boolean isBertemu() {
+            return this.isBertemu;
+        //method yg mengembalikan nilai yang menunjukkam roket telah bertemu dengan meteor
+        }
+    }
+
+    public static void main(String[] args) {
+    //method utama yg dijalankan saat program dijalankan
+        int meteorDihindari = 0;//jumlah meteor yg berhasil dihindari
+        int meteorDiperlukan = 8;//jumlah meteor yang harus dihindari untuk sampe finish
+        boolean gameOver = false;//status game(false selama game berlangsung dan true saat game berakhir)
 
         System.out.println("Selamat datang di Game Roket Luar Angkasa!");
         System.out.println("Hindari meteor untuk mencapai finish.");
-        // perintah menampilkan pesan dan perintah menghindari meteor
+        //perintah menampilkan pesan dan perintah menghindari meteor
         Roket roket = new Roket();
-        //objek roket yang digunakan dalam permainan
+        //objek roket yg digunakan dalam permainan
         Scanner scanner = new Scanner(System.in);
 
-        while (!gameOver) { //loop utama yang berjalan selama gameover nya masih false
+        while (!gameOver) {
+        //loop utama yg berjalan selama gameovernya masih false
             displayGame(roket.getPosisi(), meteorDihindari);
             System.out.println("Pilih tindakan Anda:");
             System.out.println("1. Naik ke atas");
             System.out.println("2. Keluar");
-            // pilihan untuk pemain memilih tindakan
+            //pilihan untuk pemain memilih tindakan
             int pilihan = scanner.nextInt();
-            // pilihan diinput dengan scanner
-            switch (pilihan) { //switch untuk aksi pemain (pengondisian if/else)
+            //pilihan diinput menggunakan scanner
+            switch (pilihan) {
+            //switch untuk aksi pemain dengan(pengondisian if/else)
                 case 1:
-                    if (Math.random() < 0.4) { //kemungkinan bertemu meteor 40%
+                    if ( Math.random()<0.4) {
+                    //kemungkinan bertemu meteor 40%
                         System.out.println("Anda bertemu dengan meteor! Roket rusak!");
-                        //perintah menampilkan pesan "jika bertemu meteor maka roket akan rusak"
-                        meteorDihindari++; //jumlah meteor yang dihindari bertambah
+                        //perintah menampilkan pesan
+                        meteorDihindari++;
+                        //jumlah meteor dihindari bertambah
                         System.out.println("Meteor yang dihindari: " + meteorDihindari);
                         //perintah menampilkan pesan
-                        if (meteorDihindari >= meteorDiperlukan) { //pengondisian(if)jika mencapai jumlah meteor yang 
-                                 diperlukan
+                        if (meteorDihindari >= meteorDiperlukan) {
+                        //pengondisian (if)jika mencapai jumlah meteor yg diperlukan
                             System.out.println("Anda berhasil menghindari semua meteor! Selamat, Anda mencapai finish!");
                             gameOver = true;
                         } else {
@@ -88,7 +117,7 @@ public class gameroket {
                         System.out.println("Anda berhasil naik ke atas.");
                     }
                     break;
-                    //pemain berhasil sampai finish
+                    //pemain berhasil dalam permainan dan sampai finish
                 case 2:
                     System.out.println("Anda keluar dari permainan.");
                     gameOver = true;
@@ -97,36 +126,39 @@ public class gameroket {
                 default:
                     System.out.println("Pilihan tidak valid. Silakan pilih kembali.");
                     break;
-                    //jika pemain memilih pilihan lain,maka akan muncul pilihan tidak valid
+                //jika pemain memilih pilihan lain,maka akan muncul pilihan tidak valid
             }
         }
 
-        scanner.close(); //menutup objek scanner yang digunakan
+        scanner.close();
+        //menutup objek scanner yg digunakan
     }
 
     private static void displayGame(int roketPosisi, int meteorsAvoided) {
-        // Menampilkan roket dan meteor yang dihindari
+    //menampilkan roket dan meteor yang dihindari
         for (int i = 0; i < 10; i++) {
         //loop(for dari 0-9)
             if (i == roketPosisi) {
                 System.out.print("R");
-                //jika i=roketPosisi,makan akan muncul R=
+            //jika i=roketposisi,maka akan muncul simbol R
             } else {
                 System.out.print("-");
-                //jika pengecualian diatas tidak jalan akan muncul simbol(-)
+            //pengecualian jika diatas tidak jalan maka akan muncul simbol(-)
             }
         }
         System.out.println();
-
-        // Menampilkan meteor yang dihindari
+        
         System.out.print("Meteor dihindari: ");
-        for (int i = 0; i < meteorsAvoided; i++) { //loop(for 0 hinnga meteorsAvoided -1)
-            System.out.print("* ");// karakter representasi meteor (jumlah meteor)
+        //menampilkan meteor yang dihindari
+        for (int i = 0; i < meteorsAvoided; i++) {
+        //loop(for 0 hingga meteorsAvoided -1)
+            System.out.print("* ");
+            //karakter representasi meteor(jumlah meteor)
         }
         System.out.println();
     }
 }
-  
+   
 ## 2. konsep variable, data type dan operator pada bahasa pemrograman digunakan dalam pembuatan game ini
 game ini memanfaatkan variabel-variabel seperti posisi,meteorDihindari, meteorDiperlukan dan gameOver digunakan untuk melacak informasi seperti roket, jumlah meteor, jumlah meteor yang diperlukan dan status game.
 - Tipe data seperti int digunakan untuk menyimpan bilangan bulat, boolean untuk menyimpan nilai kebenaran (true/false), dan String untuk menyimpan teks. Contohnya adalah int meteorDihindari = 0;, yang mendeklarasikan variabel meteorDihindari dengan tipe data int.
