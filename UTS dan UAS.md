@@ -22,7 +22,7 @@ Sistem | Membuat hambatan | Mempersulit roket supaya bisa menghindari 8 kali met
 <img width="284" alt="Screenshot 2023-12-25 121035" src="https://github.com/SyifaNurmaulida/UTS-UAS-PDP/assets/145275738/faf4fe9e-385b-48e4-a01f-02433769fadb">
 
 ## 1.7 Link Demo game
-
+https://youtu.be/F9dYljhrmrQ
 ## 1.8 Kode Pemograman Game
     import java.util.Scanner;
 //deklarasi penggunaan class scanner untuk mengambil input pengguna
